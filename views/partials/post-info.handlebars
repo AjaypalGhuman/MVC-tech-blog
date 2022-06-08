@@ -1,5 +1,11 @@
 <!-- displays all the information associated with a created post -->
 <article class="post">
+  <div class="meta">
+    Posted by
+    {{user.username}}
+    on
+    {{format_date created_at}}
+  </div>
   <div class="title">
     <h3>{{title}}</h3>
     <p>{{description}}</p>
