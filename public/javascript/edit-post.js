@@ -1,7 +1,7 @@
 async function editFormHandler(event) {
   event.preventDefault();
 
-  // function used to edit posts in account using the edit-post form
+  // function used to edit posts in dashboard using the edit-post form
 
   const title = document.querySelector('input[name="post-title"]').value.trim();
   const description = document.querySelector('input[name="description"]').value;
@@ -21,7 +21,7 @@ async function editFormHandler(event) {
   });
 
   if (response.ok) {
-    document.location.replace("/account/");
+    document.location.replace("/dashboard/");
   } else {
     alert(response.statusText);
   }

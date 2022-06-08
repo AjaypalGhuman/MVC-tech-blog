@@ -1,7 +1,7 @@
 async function deleteFormHandler(event) {
   event.preventDefault();
 
-  // functionality used to delete a post from the account
+  // functionality used to delete a post from the dashboard
 
   const id = window.location.toString().split("/")[
     window.location.toString().split("/").length - 1
@@ -11,7 +11,7 @@ async function deleteFormHandler(event) {
   });
 
   if (response.ok) {
-    document.location.replace("/account/");
+    document.location.replace("/dashboard/");
   } else {
     alert(response.statusText);
   }

@@ -17,7 +17,7 @@ async function loginFormHandler(event) {
     });
 
     if (response.ok) {
-      document.location.replace("/account/");
+      document.location.replace("/dashboard/");
 
       // if credentials are not put in correctly, displays error response
     } else {
@@ -47,7 +47,7 @@ async function signupFormHandler(event) {
     });
 
     if (response.ok) {
-      document.location.replace("/account/");
+      document.location.replace("/dashboard/");
     } else {
       alert(response.statusText);
     }
