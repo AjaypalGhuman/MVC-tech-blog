@@ -4,7 +4,6 @@ async function editFormHandler(event) {
   // function used to edit posts in account using the edit-post form
 
   const title = document.querySelector('input[name="post-title"]').value.trim();
-  const game_name = document.querySelector('input[name="game-name"]').value;
   const description = document.querySelector('input[name="description"]').value;
 
   const id = window.location.toString().split("/")[
@@ -14,7 +13,6 @@ async function editFormHandler(event) {
     method: "PUT",
     body: JSON.stringify({
       title,
-      game_name,
       description,
     }),
     headers: {
