@@ -43,7 +43,7 @@ User Dashboard:
 
 ## Links
 
-Deployed application:
+Deployed application: https://secret-sierra-99645.herokuapp.com/
 
 ## Technologies
 
